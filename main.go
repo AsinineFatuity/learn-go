@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+func PrintMessage(message string) {
+	fmt.Println(message)
+}
 func main() {
-	fmt.Printf("Καλημέρα κόσμε; or こんにちは 世界\n")
+	PrintMessage("Hi Eva, bride to be!")
 }
