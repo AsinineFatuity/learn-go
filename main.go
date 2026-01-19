@@ -31,7 +31,7 @@ func variablesExample() {
 	fmt.Println((decision))
 }
 func main() {
-	a := printMessage("Hi Eva, bride to be!")
+	a := printMessage("Hello Go World!")
 	fmt.Println(a)
 	constantsExample()
 	variablesExample()
