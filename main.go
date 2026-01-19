@@ -7,6 +7,6 @@ func PrintMessage(message string) (test string) {
 	return message
 }
 func main() {
-	var a string = PrintMessage("Hi Eva, bride to be!")
+	a := PrintMessage("Hi Eva, bride to be!")
 	fmt.Println(a)
 }
