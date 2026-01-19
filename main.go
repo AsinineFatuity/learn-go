@@ -19,8 +19,16 @@ func ConstantsExample() {
 	)
 	fmt.Println(PYTHON, TYPESCRIPT, GOLANG)
 }
+
+func VariablesExample() {
+	var num int
+	fmt.Println(num)
+	var decision bool
+	fmt.Println((decision))
+}
 func main() {
 	a := PrintMessage("Hi Eva, bride to be!")
 	fmt.Println(a)
 	ConstantsExample()
+	VariablesExample()
 }
