@@ -3,7 +3,6 @@ package main
 import "fmt"
 
 func PrintMessage(message string) (test string) {
-	fmt.Println(message)
 	return message
 }
 
@@ -12,12 +11,13 @@ func ConstantsExample() {
 	var n int = 6
 	fmt.Println(float64(n+5) * PI)
 	// enumeration example
+	type LanguageKnown int
 	const (
-		PYTHON     = 0
-		TYPESCRIPT = 1
-		GOLANG     = 2
+		PYTHON LanguageKnown = iota
+		TYPESCRIPT
+		GOLANG
 	)
-	fmt.Println(PYTHON)
+	fmt.Println(PYTHON, TYPESCRIPT, GOLANG)
 }
 func main() {
 	a := PrintMessage("Hi Eva, bride to be!")
