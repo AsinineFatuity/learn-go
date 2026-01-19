@@ -2,11 +2,11 @@ package main
 
 import "fmt"
 
-func PrintMessage(message string) (test string) {
+func printMessage(message string) (test string) {
 	return message
 }
 
-func ConstantsExample() {
+func constantsExample() {
 	const PI float64 = 3.14
 	var n int = 6
 	fmt.Println(float64(n+5) * PI)
@@ -20,15 +20,19 @@ func ConstantsExample() {
 	fmt.Println(PYTHON, TYPESCRIPT, GOLANG)
 }
 
-func VariablesExample() {
+func variablesExample() {
+	/*
+		variables are named in camel case (exampleVariable) but if they are to be exported the must
+		 must start with capital letter (ExampleVariable)
+	*/
 	var num int
 	fmt.Println(num)
 	var decision bool
 	fmt.Println((decision))
 }
 func main() {
-	a := PrintMessage("Hi Eva, bride to be!")
+	a := printMessage("Hi Eva, bride to be!")
 	fmt.Println(a)
-	ConstantsExample()
-	VariablesExample()
+	constantsExample()
+	variablesExample()
 }
