@@ -25,9 +25,9 @@ func variablesExample() {
 		variables are named in camel case (exampleVariable) but if they are to be exported the must
 		 must start with capital letter (ExampleVariable)
 	*/
-	var num int
+	var num int = 10
 	fmt.Println(num)
-	var decision bool
+	var decision bool = true
 	fmt.Println((decision))
 }
 func main() {
