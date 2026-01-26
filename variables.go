@@ -5,7 +5,7 @@ import "fmt"
 // Global variable
 var total int
 
-func variables() {
+func OptimalVariables() {
 	// local variable
 	var sum int
 	{

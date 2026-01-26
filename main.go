@@ -33,6 +33,7 @@ func variablesExample() {
 func main() {
 	a := printMessage("Hello Go World!")
 	fmt.Println(a)
-	constantsExample()
-	variablesExample()
+	// constantsExample()
+	// variablesExample()
+	OptimalVariables()
 }
