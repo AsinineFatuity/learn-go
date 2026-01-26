@@ -26,9 +26,9 @@ func variablesExample() {
 		 must start with capital letter (ExampleVariable)
 	*/
 	var num = 10
-	fmt.Println(num)
+	fmt.Printf("The number is %d\n", num)
 	var decision = true
-	fmt.Println((decision))
+	fmt.Printf("The decision is %t\n", decision)
 }
 func main() {
 	a := printMessage("Hello Go World!")
