@@ -20,7 +20,5 @@ func OptimalVariables() {
 }
 
 func scaleValue(count int, factor int) int {
-	// Accessing local variable
-	scaledValue := count * factor
-	return scaledValue
+	return count * factor
 }
