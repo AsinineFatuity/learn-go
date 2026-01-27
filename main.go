@@ -37,4 +37,5 @@ func main() {
 	constantsExample()
 	variablesExample()
 	OptimalVariables()
+	ElementaryTypes()
 }
