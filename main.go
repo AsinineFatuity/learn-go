@@ -38,4 +38,5 @@ func main() {
 	variablesExample()
 	OptimalVariables()
 	ElementaryTypes()
+	Bitwise()
 }
