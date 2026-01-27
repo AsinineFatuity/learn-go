@@ -29,11 +29,12 @@ func variablesExample() {
 	fmt.Printf("The number is %d\n", num)
 	var decision = true
 	fmt.Printf("The decision is %t\n", decision)
+	fmt.Printf("But he said to me %q \n", "My grace is sufficient for you")
 }
 func main() {
 	a := printMessage("Hello Go World!")
 	fmt.Println(a)
-	// constantsExample()
-	// variablesExample()
+	constantsExample()
+	variablesExample()
 	OptimalVariables()
 }
