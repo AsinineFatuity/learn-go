@@ -32,12 +32,13 @@ func variablesExample() {
 	fmt.Printf("But he said to me %q \n", "My grace is sufficient for you")
 }
 func main() {
-	a := printMessage("Hello Go World!")
-	fmt.Println(a)
-	constantsExample()
-	variablesExample()
-	OptimalVariables()
-	ElementaryTypes()
-	Bitwise()
-	ToFahrenheit(100)
+	// a := printMessage("Hello Go World!")
+	// fmt.Println(a)
+	// constantsExample()
+	// variablesExample()
+	// OptimalVariables()
+	// ElementaryTypes()
+	// Bitwise()
+	// ToFahrenheit(100)
+	StringManipulationRunner()
 }
