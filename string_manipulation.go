@@ -19,12 +19,17 @@ func ContainsEducative(email string) bool {
 
 func MaskUserName(email string) string {
 	splitEmail := strings.Split(email, "@")
+	if len(splitEmail) != 2 || len(splitEmail[0]) == 0 {
+		return email //malformed email
+	}
 	username := splitEmail[0]
-	lastIndex := len(username) - 1
-	firstChar, lastChar := string(username[0]), string(username[lastIndex])
-	toBeMasked := username[1:lastIndex]
+	if len(username) <= 2 {
+		return email //nothing to mask
+	}
+	firstChar := string(username[0])
+	lastChar := string(username[len(username)-1])
 	unmasked := "@" + splitEmail[1]
-	mask := strings.Repeat("*", len(toBeMasked))
+	mask := strings.Repeat("*", len(username)-2)
 	return firstChar + mask + lastChar + unmasked
 }
 
