@@ -39,4 +39,5 @@ func main() {
 	OptimalVariables()
 	ElementaryTypes()
 	Bitwise()
+	ToFahrenheit(100)
 }
