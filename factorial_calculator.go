@@ -8,7 +8,7 @@ import (
 // It returns 0 as the factorial value if n is negative.
 func Factorial(n int) (int, error) {
 	if n < 0 {
-		return 0, fmt.Errorf("cannot calculate factorial of a negative number")
+		return 0, fmt.Errorf("cannot calculate factorial of a negative number: %d", n)
 	}
 
 	if n == 0 {
