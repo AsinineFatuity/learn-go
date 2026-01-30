@@ -40,5 +40,6 @@ func main() {
 	// ElementaryTypes()
 	// Bitwise()
 	// ToFahrenheit(100)
-	StringManipulationRunner()
+	// StringManipulationRunner()
+	ExecuteFactorial()
 }

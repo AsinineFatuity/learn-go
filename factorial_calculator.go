@@ -6,13 +6,13 @@ import (
 
 // Factorial calculates the factorial of a non-negative integer n.
 // It returns 0 as the factorial value if n is negative.
-func Factorial(n int) int {
+func Factorial(n int) (int, error) {
 	if n < 0 {
-		return 0
+		return 0, fmt.Errorf("cannot calculate factorial of a negative number")
 	}
 
 	if n == 0 {
-		return 1 // Factorial of 0 is 1
+		return 1, nil // Factorial of 0 is 1
 	}
 
 	factorial := 1
@@ -20,16 +20,24 @@ func Factorial(n int) int {
 		factorial *= i
 	}
 
-	return factorial
+	return factorial, nil
 }
 
 func ExecuteFactorial() {
 	n := 10
 	x := -10
 
-	result := Factorial(n)
-	fmt.Printf("Factorial of %d is %d\n", n, result)
+	result, err := Factorial(n)
+	if err != nil {
+		fmt.Printf("An error occurred while calculating factorial for %d: %v\n", n, err)
+	} else {
+		fmt.Printf("Factorial of %d is %d\n", n, result)
+	}
 
-	result = Factorial(x)
-	fmt.Printf("Factorial of %d is %d\n", x, result)
+	result, err = Factorial(x)
+	if err != nil {
+		fmt.Printf("An error occurred while calculating factorial for %d: %v\n", x, err)
+	} else {
+		fmt.Printf("Factorial of %d is %d\n", x, result)
+	}
 }
